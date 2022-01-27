@@ -27,6 +27,23 @@
       margin-right: 25px;
       text-decoration: none; }
 
+.whats-app {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  left: 15px;
+  z-index: 100;
+  text-decoration: none; }
+
+.my-float {
+  margin-top: 10px;
+  width: 50px; }
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .navbar ul {
     justify-content: end; }
