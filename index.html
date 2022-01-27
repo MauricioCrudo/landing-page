@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo Cinetto</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/favicon.ico" type="./assets/img/favicon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/main-mobile.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img src="assets/img/LOGO_Grupo_Cinetto.png" alt="Grupo Cinetto" />
+      <ul>
+        <li><a href="#about">¿Quienes Somos?</a></li>
+        <li><a href="#services">Nuestro Servicio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </header>
+    <div class="grid-container-hero">
+      <div class="hero">
+        <video
+          class="hero-video"
+          id="bgvid"
+          src="./assets/video/Video Grupo Cinetto.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <div class="hero-data">
+          <img
+            class="logo-hero"
+            src="assets/img/LOGO_Grupo_Cinetto.png"
+            alt="Grupo Cinetto"
+          />
+          <div class="text-hero">
+            <h3>De un puerto a otro puerto</h3>
+          </div>
+          <a href="#about">
+            <svg
+              width="45"
+              height="45"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Sobre Nosotros  -->
+    <div class="about" id="about">
+      <div class="container-about">
+        <div class="about-text">
+          <h2><b>¿Quienes somos?</b></h2>
+          <p>
+            Grupo Cinetto es una empresa importadora especializada en distintos
+            tipos de materia prima de primera calidad.
+          </p>
+          <p>
+            Importadores a traves del mundo, nos encargamos de que te lleguen
+            los materiales que necesitas
+          </p>
+        </div>
+        <div class="about-slide">
+          <img
+            src="./assets/img/pexels-elevate-1267338.jpg"
+            alt="Trabajo Cinetto"
+          />
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="services" id="services">
+      <h2 style="text-align: center">Nuestro Servicio</h2>
+      <div class="cards">
+        <div class="service-card">
+          <img src="assets/img/pexels-visual-tag-mx-2566581.jpg" alt="" />
+        </div>
+        <div class="service-card">
+          <img src="assets/img/pexels-elevate-1267338.jpg" alt="" />
+          <h4></h4>
+        </div>
+        <div class="service-card">
+          <img src="./assets/img/pexels-jeshootscom-834892.jpg" alt="" />
+          <h4></h4>
+        </div>
+      </div>
+    </div>
+    <!-- Contacto -->
+    <div class="contact" id="contact">
+      <div class="form">
+        <form
+          action="https://formsubmit.co/mauriciocrudo@gmail.com"
+          method="POST"
+        >
+          <fieldset>
+            <h2>Contacto</h2>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Nombre de contacto"
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email de contacto"
+              required
+            />
+            <input
+              type="tel"
+              name="telefono"
+              id="telefono"
+              placeholder="Numero de telefono"
+              required
+            />
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="15"
+              placeholder="Escriba su mensaje"
+              resize="none"
+              required
+            ></textarea>
+            <div class="form-buttons">
+              <button type="submit">Enviar formulario</button>
+              <button type="reset">Descartar formulario</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="redes">
+        <div class="data-redes">
+          <a href="instagram.com" target="blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="data-redes">
+          <a href="linkedin.com" target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="data-redes">
+          <a href="mailto:grupocinetto@email.com" target="blank">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
+        <div class="data-redes">
+          <a href="whatsapp.com" target="blank">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <footer>
+      <div class="shonen" id="shonenDiv">
+        <img src="assets/img/shonen.png" alt="Shonen" />
+      </div>
+      <button id="shonenButton" class="shonen-button">no toques</button>
+    </footer> -->
+    <script
+      src="https://kit.fontawesome.com/30b68ca3e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let div = true;
+      document
+        .getElementById("shonenButton")
+        .addEventListener("click", (div) => {
+          document.getElementById("shonenDiv").style.display = "block";
+        });
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

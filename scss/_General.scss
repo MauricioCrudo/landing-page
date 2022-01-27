@@ -1,0 +1,48 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: $font1;
+}
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(163, 31, 32);
+  img {
+    height: 8vh;
+  }
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.1s;
+      &:hover {
+        color: #ebb629;
+        transition: 0.5;
+      }
+    }
+    li {
+      margin-right: 25px;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  hr{
+    
+  }
+  .navbar ul {
+    justify-content: end;
+    li {
+      margin-right: 3px;
+      text-decoration: none;
+    }
+  }
+}

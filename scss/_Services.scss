@@ -1,0 +1,49 @@
+/* Servicio */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 85vh;
+  background-color: $color1;
+  h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    img {
+        width: 100%;
+        max-width: 525px;
+      height: auto;    
+    }
+    h4 {
+      text-align: center;
+      position: absolute;
+      z-index: 100;
+    }
+  }
+}
+// Services Mobile
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 35px;
+      margin-top: 25px;
+    }
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 100%;
+        max-width: 325px;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
