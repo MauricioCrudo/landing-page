@@ -4,9 +4,11 @@
   flex-direction: column;
   justify-content: center;
   min-height: 85vh;
+  width: 100%;
   background-color: $color1;
   h2 {
     margin-bottom: 50px;
+    font-weight: bold;
     font-size: 50px;
   }
   .cards {
@@ -24,32 +26,34 @@
     }
   }
 }
+.service-mobile{
+  display: none;
+}
 // Services Mobile
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .services {
+  .carousel-service{
+    display: none;
+    margin: 10px;
+  }
+  .service-mobile{
     display: flex;
     flex-direction: column;
-    h2 {
-      font-size: 35px;
-      margin-top: 25px;
-    }
-    .cards {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      img {
-        width: 100%;
-        max-width: 325px;
-        object-fit: cover;
-        overflow: hidden;
-        margin-bottom: 25px;
+    align-items: center;
+    .service-card{
+     margin: 8px;
+      align-self: center;
+      justify-self: center;
+      max-width: 300px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #e7e7e7 ;
+      p{
+        font-weight:600;
       }
-      
+    }
+    img{
+      max-width: 240px;
     }
   }
-}
-
-.service-text h5{
-  font-size: 18px;
-  text-align: center;
 }
