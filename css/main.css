@@ -4,6 +4,9 @@
   scroll-behavior: smooth;
   font-family: "Nunito Sans", sans-serif; }
 
+.content-wrapper {
+  background-color: #fffafa; }
+
 .autohide {
   position: fixed;
   top: 0;
@@ -40,6 +43,7 @@
     .hero .hero-text .hero-p {
       font-size: 3em; }
     .hero .hero-text svg {
+      margin-top: 25px;
       fill: white;
       size: 20px; }
   .hero video {
@@ -172,7 +176,8 @@
       .service-mobile .service-card p {
         font-weight: 600; }
     .service-mobile img {
-      max-width: 240px; } }
+      max-width: 240px;
+      border-radius: 5px; } }
 
 /* contacto */
 .contact {

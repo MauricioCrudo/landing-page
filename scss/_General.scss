@@ -5,6 +5,9 @@
   scroll-behavior: smooth;
   font-family: $font1;
 }
+.content-wrapper{
+    background-color: $color1;
+  }
 // autohide
 .autohide{
   position: fixed;
@@ -73,9 +76,7 @@
 //   margin-top: 10px;
 //   width: 50px;
 // }
-// .content-wrapper{
-//   background-color: $color1;
-// }
+//
 // }
 
 // @media only screen and (min-width: 0px) and (max-width: 767px) {
