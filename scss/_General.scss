@@ -1,66 +1,92 @@
-// Reset
+//  Reset
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   font-family: $font1;
 }
-/* Header */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(163, 31, 32);
-  img {
-    height: 8vh;
-  }
-  ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    a {
-      text-decoration: none;
-      color: white;
-      transition: 0.1s;
-      &:hover {
-        color: #ebb629;
-        transition: 0.5;
-      }
-    }
-    li {
-      margin-right: 25px;
-      text-decoration: none;
-    }
-  }
-}
-
-.whats-app {
+// autohide
+.autohide{
   position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  left: 15px;
-  z-index: 100;
-  text-decoration: none;
-}
-.my-float {
-  margin-top: 10px;
-  width: 50px;
-}
-
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-
-  .navbar ul {
-    justify-content: end;
-    li {
-      margin-right: 3px;
-      text-decoration: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    img{
+      width: 80px;
     }
-  }
 }
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+// 
 
+// /* Header */
+// .navbar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: rgb(163, 31, 32);
+//   img {
+//     height: 8vh;
+//   }
+//   navbar-list{
+//   ul {
+//     display: flex;
+//     text-decoration: none;
+//     list-style: none;
+//     .nav-link{
+//       text-decoration: none;
+//       color: white;
+//       transition: 0.1s;
+//       &:hover {
+//         color: #ebb629;
+//         transition: 0.5;
+//       }
+//     }
+//     li {
+//       margin-right: 25px;
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+
+// .whats-app {
+//   position: fixed;
+//   width: 50px;
+//   height: 50px;
+//   bottom: 40px;
+//   color: #FFF;
+//   border-radius: 50px;
+//   text-align: center;
+//   font-size: 30px;
+//   left: 15px;
+//   z-index: 100;
+//   text-decoration: none;
+// }
+// .my-float {
+//   margin-top: 10px;
+//   width: 50px;
+// }
+// .content-wrapper{
+//   background-color: $color1;
+// }
+// }
+
+// @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+//   .navbar ul {
+//     justify-content: end;
+//     li {
+//       margin-right: 3px;
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+ 

@@ -1,71 +1,199 @@
 /* contacto */
 .contact {
+  display: flex;  
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 60px;
+  background-color: $color1;
+
+  .contact-info-wrapper{
+    max-width: 500px;
+    max-height: 240px;
+    border-radius: 3px;
+    padding: 50px 25px;
+    margin: 10px;
+
+    top: 100px;
+    p{
+      width: 350px;
+    }
+  }
+  form {
+    width: min-content;
+    align-self: center;
+    justify-self: center;
+    margin: 10px;
+    width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    background-color: $color2;
+    color: $color3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    border-radius: 2%;
+    padding: 25px;
+  }
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: $azul;
+    margin: 10px;
+  }
+  input {
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  textarea {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    max-height: 180px;
+  }
+  .form-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      color: rgb(22, 22, 22);
+      &:hover {
+        transition: 0.1s;
+        background-color: white;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+/* redes */
+.redes-contact-desktop {
+  width: fit=-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+.redes-contact-mobile{
+  display: none;
+}
+.data-redes {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+i {
+  font-size: 25px;
+  text-align: center;
+  justify-self: center;
+}
+.data-redes a {
+  align-self: center;
+  margin-top: 25px;
+  color: $azul;
+  &:hover{
+    transition: 0.1s;
+    color: $rojo;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /* contact mobile */
+  .contact {
+    display: flex;  
+    flex-direction: column;
+   
+
+    padding: 60px;
     background-color: $color1;
-    .form {
-        width: min-content;
-        align-self: center;
-        justify-self: center;
-      }
-      fieldset {
-        width: 500px;
-        background-color: rgb(231, 231, 231);
-        border: none;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-self: center;
-        border-radius: 2%;
-        padding: 25px;
-      }
-      h2 {
-        text-align: center;
-        margin: 10px;
-      }
+    .contact-info-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h2{
+      font-size: 50px;
+      align-self: center;
+      padding: 10px;
+    }
+    p{
+
+      font-size: 18px;
+
+      max-width: 300px;
+    }
+  }
+
+  form {
+    max-width: 300px;
+    width: 100%;
+
+    fieldset {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+
       input {
-        height: 50px;
-        border: none;
-        margin-top: 10px;
-        border-radius: 1%;
+        margin-top: 20px;
         padding: 5px;
+        max-width: 400px;
+        border-radius: 5px;
+        height: 18px;
       }
       textarea {
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 5px;
-        border: none;
+        max-width: 400px;
         border-radius: 5px;
+        height: 25px;
         resize: none;
       }
-      .form-buttons {
-        margin-top: 15px;
-        display: flex;
-        justify-content: space-around;
-        button {
-            padding: 10px;
-            border: none;
-            border-radius: 10px;
-            color: rgb(22, 22, 22);
-            &:hover {
-                transition: 0.1s;
-                background-color: white;
-                transform: scale(1.05);
-              }
-          }
+    }
+    .form-buttons button {
+      padding: 5px;
+      border: none;
+      border-radius: 10px;
+      color: rgb(22, 22, 22);
+      background-color: white;
+      &:hover {
+        transition: 0.1s;
+        background-color: rgb(255, 221, 157);
+        transform: scale(1.05);
       }
+    }
   }
-  /* redes */
-  .redes {
-    width: max-content;
+  .redes-contact-desktop{
+    display: none;
+  }
+.redes-contact-mobile{
+  width: fit=-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  .redes-contact-desktop {
+    width: fit=-content;
     display: flex;
     justify-content: space-evenly;
     align-self: center;
     justify-self: center;
+    margin: 0;
   }
   .data-redes {
-    margin-right: 35px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -79,71 +207,10 @@
   .data-redes a {
     align-self: center;
     margin-top: 25px;
-    color: black;
-  }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-      /* contact mobile */
-        .form {
-            max-width: 500px;
-            width: 100%;
-
-            fieldset {
-                width: 100%;
-                max-width: 500px;
-                padding: 10px;
-                h2 {
-                    margin: 10px;
-                  }
-                  input {
-                    margin-top: 20px;
-                    padding: 5px;
-                    max-width: 400px;
-                    border-radius: 5px;
-                    height: 18px;
-                  }
-                  textarea {
-                    margin-top: 20px;
-                    padding: 5px;
-                    max-width: 400px;
-                    border-radius: 5px;
-                    height: 75px;
-                  }
-              }
-              .form-buttons button {
-                padding: 5px;
-                border: none;
-                border-radius: 10px;
-                color: rgb(22, 22, 22);
-                background-color: white;
-                &:hover{
-                    transition: 0.1s;
-                    background-color: rgb(255, 221, 157);
-                    transform: scale(1.05);
-                  }
-              }
-          }
-      }
-      /* redes */
-      .redes {
-        width: max-content;
-        display: flex;
-        justify-content: space-evenly;
-        align-self: center;
-        justify-self: center;
-        padding: 25px;
-      }
-      .data-redes {
-        align-content: center;
-        justify-content: space-evenly;
-      }
-      i {
-        font-size: 25px;
-        text-align: center;
-        justify-self: center;
-      }
-      .data-redes a {
-        align-self: center;
-        margin-top: 25px;
-        color: black;
-      }
-    
+    color: $azul;
+    &:hover{
+      transition: 0.1s;
+      color: $rojo;
+    }
+}
+}}
