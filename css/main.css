@@ -4,6 +4,9 @@
   scroll-behavior: smooth;
   font-family: "Nunito Sans", sans-serif; }
 
+body {
+  background-color: #a31f20; }
+
 .content-wrapper {
   background-color: #fffafa; }
 
@@ -13,13 +16,15 @@
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 1030; }
+  z-index: 1030;
+  background-color: #a31f20; }
   .autohide img {
     width: 80px; }
 
 .scrolled-down {
   transform: translateY(-100%);
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  background-color: #a31f20; }
 
 .scrolled-up {
   transform: translateY(0);

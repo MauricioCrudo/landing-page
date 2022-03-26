@@ -4,7 +4,9 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: $font1;
+
 }
+body{background-color: $rojo;}
 .content-wrapper{
     background-color: $color1;
   }
@@ -16,12 +18,14 @@
     left: 0;
     width: 100%;
     z-index: 1030;
+    background-color: $rojo;
     img{
       width: 80px;
     }
 }
 .scrolled-down{
   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  background-color: $rojo;
 }
 .scrolled-up{
   transform:translateY(0); transition: all 0.3s ease-in-out;
