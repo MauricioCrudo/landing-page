@@ -10,6 +10,9 @@ body {
 .content-wrapper {
   background-color: #fffafa; }
 
+.h1-header {
+  display: none; }
+
 .autohide {
   position: fixed;
   top: 0;

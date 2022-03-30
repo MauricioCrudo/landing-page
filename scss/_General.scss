@@ -10,6 +10,9 @@ body{background-color: $rojo;}
 .content-wrapper{
     background-color: $color1;
   }
+  .h1-header{
+    display: none;
+  }
 // autohide
 .autohide{
   position: fixed;
