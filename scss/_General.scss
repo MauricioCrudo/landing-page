@@ -38,14 +38,19 @@ body{background-color: $rojo;}
 	height:60px;
 	bottom:30px;
   right: 10px;
-	background-color:#0C9;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+  transition: 0.2s;
+  &:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+    background-color: rgb(103, 181, 185);
+  }
 }
 
 .my-float{
+  margin-left: 2px;
 	margin-top:5px;
 }
 
